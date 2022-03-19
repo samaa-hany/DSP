@@ -1,0 +1,19 @@
+%%  Samaa Hany Seif Elyazal            %%%%%%%%%%%%%%%%%
+%%  Wireless Communication, Intake 42  %%%%%%%%%%%%%%%%%
+%%  Day 5  , Spathial Multipexing      %%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+close all;
+clear
+clc;
+%% H(z) Function
+
+num=[1 1.655 1.655 1];
+den=[ 1 -1.57 1.264 -0.4 ];
+
+%% Ploting
+figure 1
+%subplot(2,2,1)
+zplane(num,den)
+%subplot(2,2,2)
+figure 2
+freqz(num,den)
